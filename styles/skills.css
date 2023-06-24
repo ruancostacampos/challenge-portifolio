@@ -1,0 +1,77 @@
+/*Sessão Skills */
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+    max-width: var(--largura-maxima-desktop);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.skills__title{
+    font-size: 2rem;
+}
+
+.skills__line{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.skills__box{
+    display: flex;
+    height: 174px;
+    width: 174px;
+    padding: 16px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.skills__box:hover{
+   transform: scale(1.1); 
+}
+
+.skills__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 8px;
+    align-items: start;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1168px) {
+
+    .skills__title{
+        margin-top: 32px;
+        font-size: 1.4rem;
+    }
+    
+    .skills__line{
+        justify-content: center;
+        padding: 32px;
+    }
+
+    .skills__box{
+        width: 224px;
+    }
+
+}
+
+@media (max-width: 560px){
+
+    .skills__line{
+        padding: 16px;
+    }
+
+    .skills__box{
+        width: 134px;
+        height: 150px;
+    }
+
+}

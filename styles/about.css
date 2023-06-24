@@ -1,0 +1,51 @@
+/*Sessão About*/
+
+section.about{
+    background-color: var(--cor-de-fundo-azul);
+    width: 100%;
+    padding: 64px 0;
+}
+
+.about__container{
+    width: 100%;
+    max-width: var(--largura-maxima-desktop);
+    margin: 0 auto;
+}
+
+.about__title{
+    font-size: 2.3rem;
+}
+
+.about__paragraph{
+    font-size: 1.2rem;
+}
+
+.about__signature{
+    font-family: 'Arty Signature', sans-serif;
+    font-size: 4.6rem;
+}
+
+@media (max-width: 1168px) {
+    
+    section.about{
+        padding: 0;
+    }
+
+    .about__container{
+        width: auto;
+        padding: 16px;
+    }
+
+    .about__title{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 560px){
+    
+    .about__title{
+        margin: 0;
+    }
+}
+
+
