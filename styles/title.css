@@ -117,5 +117,8 @@ section.title{
     .title__network{
         gap: 8px;
         font-size: 0.9rem;
+        justify-content: center;
+        flex-wrap: wrap;
     }
+
 }

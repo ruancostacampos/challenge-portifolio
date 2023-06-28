@@ -72,3 +72,18 @@ section.menu{
     }
 
 }
+
+@media (max-width: 300px){
+    
+    section.menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu__list{
+        padding: 0;
+    }
+
+}
+
+
