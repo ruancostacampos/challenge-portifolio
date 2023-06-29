@@ -14,7 +14,6 @@ const getGuides = async () => {
     .then( async (res) => {
         
         res = await res.json()
-        console.log(res)
 
         // If have courses
         if(res.guides.length > 0){
