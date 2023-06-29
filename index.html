@@ -33,7 +33,7 @@
     <div class="all">
     <section class="menu">
         <header class="menu__header">
-            <img src="assets\vector.svg">
+            <img src="assets/vector.svg">
             <h3 class="menu__title">Ruan</h3>
         </header>
         <nav>
@@ -57,30 +57,30 @@
                     <li class="title__network__item">
                         <a  class="title__network__item_container" href="https://github.com/ruancostacampos" target="_blank">
                             Github 
-                            <img  class="title__network__item_image" src="assets\arrow.svg">
+                            <img  class="title__network__item_image" src="assets/arrow.svg">
                         </a>
                     </li>
                     <li class="title__network__item">
                       <a  class="title__network__item_container" href="https://www.linkedin.com/in/ruancostacampos/" target="_blank">
                             Linkedin 
-                            <img  class="title__network__item_image" src="assets\arrow.svg">
+                            <img  class="title__network__item_image" src="assets/arrow.svg">
                         </a>
                     </li>
                     <li class="title__network__item">
                         <a  class="title__network__item_container" href="https://www.instagram.com/ruanblues/" target="_blank">
                             Instagram
-                            <img  class="title__network__item_image" src="assets\arrow.svg">
+                            <img  class="title__network__item_image" src="assets/arrow.svg">
                         </a>
                     </li>
                     <li class="title__network__item">
                         <a  class="title__network__item_container" href="https://drive.google.com/file/d/1L4RV--Jlubcb9HOWngMBxGSR0Iv3H259/view?usp=sharing" target="_blank">
                             Currículo
-                            <img  class="title__network__item_image" src="assets\arrow.svg">
+                            <img  class="title__network__item_image" src="assets/arrow.svg">
                         </a>
                     </li>
                 </ul>
             </div>
-            <img class="title__profile" src="assets\profile.png">
+            <img class="title__profile" src="assets/profile.png">
         </div>
     </section>
 
@@ -103,35 +103,35 @@
             <div class="skills__line">
                 <div class="skills__box">
                     <ul class="skills__item">
-                        <li class="skills__item__img"><img src="assets\html.svg"></li>
+                        <li class="skills__item__img"><img src="assets/html.svg"></li>
                         <li class="skills__item__name"> Html 5</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul class="skills__item">
-                        <li class="skills__item__img"><img src="assets\js_icon.svg"></li>
+                        <li class="skills__item__img"><img src="assets/js_icon.svg"></li>
                         <li class="skills__item__name">JavaScript</li>
                     </ul>
                 </div>
                 
                 <div class="skills__box">
                     <ul class="skills__item">
-                        <li class="skills__item__img"><img src="assets\react_icon.svg"></li>
+                        <li class="skills__item__img"><img src="assets/react_icon.svg"></li>
                         <li class="skills__item__name">React</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul class="skills__item">
-                        <li class="skills__item__img"><img src="assets\threejs_icon.svg"></li>
+                        <li class="skills__item__img"><img src="assets/threejs_icon.svg"></li>
                         <li class="skills__item__name">ThreeJS</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul class="skills__item">
-                        <li class="skills__item__img"><img src="assets\css.svg"></li>
+                        <li class="skills__item__img"><img src="assets/css.svg"></li>
                         <li class="skills__item__name">CSS</li>
                     </ul>
                 </div>
@@ -143,30 +143,12 @@
         <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
         <div class="academic__courses">
             <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <li class="academic__courses__item">
-                        <img class="academic__courses__item__img" src="https://i.ytimg.com/vi/d1zJ5LPnAcg/maxresdefault.jpg">
-                    </li>
-                    <li class="academic__courses__item"><h4 class="academic__courses__item__title">Iniciante em Programação T5 - ONE</h4></li>
-                    <li class="academic__courses__item"><p class="academic__courses__item__subtitle">2023 - Concluído - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <li class="academic__courses__item">
-                        <img class="academic__courses__item__img" src="https://i.ytimg.com/vi/d1zJ5LPnAcg/maxresdefault.jpg">
-                    </li>
-                    <li class="academic__courses__item"><h4 class="academic__courses__item__title">Desenvolvimento Pessoal T5 - ONE</h4></li>
-                    <li class="academic__courses__item"><p class="academic__courses__item__subtitle">2023 - Concluído - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <li class="academic__courses__item">
-                        <img class="academic__courses__item__img" src="https://i.ytimg.com/vi/d1zJ5LPnAcg/maxresdefault.jpg">
-                    </li>
-                    <li class="academic__courses__item"><h4 class="academic__courses__item__title">ONE | Fase 3 - Especialização Front-End</h4></li>
-                    <li class="academic__courses__item"><p class="academic__courses__item__subtitle">2023 - Em progresso</p></li>
+                <ul class="academic__courses__list"  style="align-items: center;">
+                    <li class="academic__courses__item" style="align-items: center;display: flex;flex-direction: column;">
+                        <span id="loadingIcon" class="academic__courses__item__loading"></span>
+                        <p id="loadingError" hidden>Houve um erro ao buscar os cursos.</p>
+                        <button id="findCourses" class="experiencia__botao--demo" hidden>Tentar novamente</button>
+                    </li>           
                 </ul>
             </div>
         </div>
@@ -222,7 +204,7 @@
         <section class="formcontato">
             <div id="contato" class="formcontato__contacto">
                 <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
+                    <img class="formcontato__img" src="assets/contact_image.png">
                 </div>
                 <div class="formcontato__text">
                     <div class="formcontato__text__container">
@@ -267,5 +249,6 @@
     <!-- Script Linkado do seu documento de JavaScript -->
 <script src="validate.js"></script>
 <script src="animations.js"></script>
+<script src="guides.js"></script>
 </body>
 </html>
